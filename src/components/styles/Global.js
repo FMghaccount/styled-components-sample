@@ -17,6 +17,10 @@ const GlobalStyles = createGlobalStyle`
    font-style: normal;
  }
 
+ :root{
+  font-size: 16px
+ }
+
   * {
     box-sizing: border-box;
   }
@@ -25,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.colors.body};
     color: hsl(192, 100%, 9%);
     font-family: 'Vazir', 'Poppins', sans-serif;
-    font-size: 1.15em;
+    font-size: 1.15rem;
     margin: 0;
   }
 
@@ -36,7 +40,11 @@ const GlobalStyles = createGlobalStyle`
 
   img {
     max-width: 100%;
-}
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    body{font-size: 0.8rem}
+  }
 `
 
 export default GlobalStyles
