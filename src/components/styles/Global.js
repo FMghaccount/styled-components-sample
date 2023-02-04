@@ -1,21 +1,23 @@
 import { createGlobalStyle } from 'styled-components'
-import Vazireot from '../../assets/fonts/vazir/Vazir.eot';
-import Vazirttf from '../../assets/fonts/vazir/Vazir.ttf';
-import Vazirwoff from '../../assets/fonts/vazir/Vazir.woff';
-import Vazirwoff2 from '../../assets/fonts/vazir/Vazir.woff2';
+import iranyekaneot from '../../assets/fonts/iranyekan/weight-400/iranyekanwebregularfanum.eot'
+import iranyekanttf from '../../assets/fonts/iranyekan/weight-400/iranyekanwebregularfanum.ttf'
+import iranyekanwoff from '../../assets/fonts/iranyekan/weight-400/iranyekanwebregularfanum.woff'
 
 const GlobalStyles = createGlobalStyle`
-   @font-face {
-   font-family: 'Vazir';
-   src: url(${Vazireot});
-   src: url(${Vazireot}?#iefix)
-       format('embedded-opentype'),
-     url(${Vazirwoff2}) format('woff2'),
-     url(${Vazirwoff}) format('woff'),
-     url(${Vazirttf}) format('truetype');
-   font-weight: normal;
-   font-style: normal;
- }
+  
+
+@font-face {
+  font-family: 'iranyekan';
+  font-style: normal;
+  font-weight: 400;
+  src: url(${iranyekaneot});
+  src: url(${iranyekaneot}?#iefix)
+      format('embedded-opentype'),
+    url(${iranyekanwoff}.woff)
+      format('woff'),
+    url(${iranyekanttf})
+      format('truetype');
+}
 
  :root{
   font-size: 16px
@@ -27,15 +29,16 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background: ${({ theme }) => theme.colors.body};
-    color: hsl(192, 100%, 9%);
-    font-family: 'Vazir', 'Poppins', sans-serif;
+    color: hsl(0deg 0% 0%);
+    font-family: 'iranyekan', 'Poppins', sans-serif;
     font-size: 1.15rem;
     margin: 0;
+    line-height: 1.7;
   }
 
   p {
     opacity: 0.6;
-    line-height: 1.5;
+    line-height: 1.8;
   }
 
   img {
@@ -43,10 +46,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    body{font-size: 0.8rem}
+    body{font-size: 1rem}
   }
 `
 
 export default GlobalStyles
-
-

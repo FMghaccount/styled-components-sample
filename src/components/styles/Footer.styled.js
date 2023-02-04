@@ -8,10 +8,18 @@ export const StyledFooter = styled.footer`
   ul {
     list-style-type: none;
   }
+  ul:first-child {
+    padding-left: 15px;
+    padding-right: 15px
+  }
+  ul:first-child li {
+    text-align: justify;
+  }
 
   ul li {
     margin-bottom: 20px;
-    text-align: right;
+    text-align: center;
+    direction: rtl;
   }
 
   p {
@@ -28,7 +36,7 @@ export const StyledFooter = styled.footer`
     }
 
     ul li {
-      text-align: center;
+      text-align: center !important;
     }
 
     p {

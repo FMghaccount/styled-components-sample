@@ -15,7 +15,8 @@ export const Flex = styled.div`
   }
 
   & p {
-    text-align: right;
+    direction: rtl;
+    text-align: justify;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {

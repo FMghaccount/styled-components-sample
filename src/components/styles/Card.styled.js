@@ -21,6 +21,7 @@ export const StyledCard = styled.div`
 
   & p, & h2 {
     direction: rtl;
+    text-align: justify;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -28,6 +29,10 @@ export const StyledCard = styled.div`
 
     & p, & h2 {
     text-align: center;
-  }
+    }
+
+    & {
+      padding: 20px;
+    }
   }
 `

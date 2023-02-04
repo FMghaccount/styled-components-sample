@@ -3,6 +3,11 @@ import styled from 'styled-components'
 export const StyledHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.header};
   padding: 40px 0;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    & h1, & p {
+      text-align: justify;
+    }
+  }  
 `
 
 export const Nav = styled.nav`

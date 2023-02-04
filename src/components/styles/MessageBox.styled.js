@@ -31,5 +31,10 @@ export const CallToAction = styled.div`
     direction: rtl;
   }
 
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    &{font-size: 0.8rem}
+    & > button {font-size: 0.78rem}
+  }
+
 `
 

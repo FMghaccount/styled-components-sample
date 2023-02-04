@@ -5,7 +5,7 @@ export const Button = styled.button`
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  font-family: 'Vazir';
+  font-family: 'iranyekan';
   font-size: 1rem;
   font-weight: 700;
   padding: 10px 40px;
